@@ -6,7 +6,6 @@
     --rich-black: #000411;
 }
 
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -14,22 +13,40 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     background: linear-gradient(45deg, #160C28 0%, #AEB7B3 100%);
     color: var(--rich-black);
     line-height: 1.6;
+    margin-top: 0;
 }
 
-.header {
+header {
+    background-color: var(--dark-purple);
+    padding: 20px 0;
     text-align: center;
     color: var(--naples-yellow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative; 
 }
 
-.header h1 {
-    font-size: 2.5em;
+header .main-title {
+    font-size: 5em;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -91,7 +108,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 60px;
-    align-items: flex-start;
+    align-items: center;
     border-bottom: 3px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 30px;
 }
@@ -112,3 +129,50 @@ button:hover {
 .section h2, .section p, .section ul {
     width: calc(100% - 250px - 30px);
 }
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+    header .main-title { /* Ajustar selector */
+        font-size: 2.5em;
+    }
+    
+    header .subtitle {
+        font-size: 1em; /* Reducir el tamaño de fuente del subtítulo */
+        bottom: 5px;
+        right: 5px;
+    }
+
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .section {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .section img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .section h2, .section p, .section ul {
+        width: 100%;
+    }
+
+    ul {
+        margin-left: 20px; /* Reducir el margen izquierdo en dispositivos móviles */
+    }
+}
+
