@@ -1,0 +1,135 @@
+:root {
+    --dark-purple: #160C28;
+    --naples-yellow: #EFCB68;
+    --honeydew: #E1EFE6;
+    --ash-gray: #AEB7B3;
+    --rich-black: #000411;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(45deg, #160C28 0%, #AEB7B3 100%);
+    color: var(--rich-black);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-purple);
+    padding: 20px 0;
+    text-align: center;
+    color: var(--naples-yellow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+/* Estilos para el título principal "The podcast" */
+header .main-title {
+    font-size: 5em;  /* Aumentamos el tamaño aquí */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para "A digital citizen of the universe." */
+header .subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);  /* Reducimos la opacidad para hacerlo menos prominente */
+    position: absolute; /* Aseguramos la posición absoluta */
+    bottom: 10px;  /* Posicionamos en la esquina inferior */
+    right: 10px;   /* Posicionamos a la derecha */
+}
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--naples-yellow);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    border-bottom: 2px solid var(--naples-yellow);
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: var(--rich-black);
+}
+
+button {
+    background-color: var(--ash-gray);
+    color: var(--rich-black);
+    padding: 15px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--ash-gray);
+    color: var(--dark-purple);
+    transform: scale(1.05);
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+
+.section img {
+    flex: 0 0 250px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.section h2, .section p, .section ul {
+    width: calc(100% - 250px - 30px);
+}
