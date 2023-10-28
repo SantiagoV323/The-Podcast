@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <style>
+        /* Estilos básicos para hacer la página responsiva */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Estilos para el nuevo encabezado */
         .header {
             background: url('https://wallpapers.com/images/hd/podcast-background-1920-x-1080-gg9kbtvo5htz5xhu.jpg') no-repeat center center;
             background-size: cover;
-            height: 250px; /* ajusta según necesites */
+            height: 250px;
             position: relative;
             text-align: center;
             color: white;
-            font-family: 'Arial', sans-serif;
         }
 
         .header h1 {
@@ -25,9 +37,19 @@
             transform: translate(-50%, -50%);
             font-size: 2em;
         }
+
+        /* Estilos responsivos */
+        @media only screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .section {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 <body>
     <header class="header">
         <h1>The podcast</h1>
@@ -55,7 +77,6 @@
                 <li>Afiliados y comisiones</li>
                 <li>Contenido exclusivo para suscriptores</li>
                 <li>Mercancía y productos relacionados</li>
-                <!-- Puedes continuar agregando otros puntos según la información que desees presentar -->
             </ul>
         </section>
 

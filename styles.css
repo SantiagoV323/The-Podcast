@@ -14,43 +14,22 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(45deg, #160C28 0%, #AEB7B3 100%);
     color: var(--rich-black);
     line-height: 1.6;
 }
 
-header {
-    background-color: var(--dark-purple);
-    padding: 20px 0;
+.header {
     text-align: center;
     color: var(--naples-yellow);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative; 
 }
 
-/* Estilos para el título principal "The podcast" */
-header .main-title {
-    font-size: 5em;  /* Aumentamos el tamaño aquí */
+.header h1 {
+    font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-
-/* Estilos para "A digital citizen of the universe." */
-header .subtitle {
-    font-size: 1.2em;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);  /* Reducimos la opacidad para hacerlo menos prominente */
-    position: absolute; /* Aseguramos la posición absoluta */
-    bottom: 10px;  /* Posicionamos en la esquina inferior */
-    right: 10px;   /* Posicionamos a la derecha */
-}
-
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
 }
 
 h2, h3, h4, h5, h6 {
